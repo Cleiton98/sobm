@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <!--Construcao de navbar-->
+    <nav class="navbar">
+        <a class="navbar-brand" href="home.html"><img src="img/DISTINTIVO_INSTITUCIONAL_CBMBA-brand.png" alt="DISTINTIVO INSTITUICIOANAL CBMBA" /></a>
+    </nav>
+    &nbsp;&nbsp;
+    <div class="container">
+        <!--Criacao dos forms-->
+        <form action="#" method="POST" name="forms-vitima"><!--Formulario da vitima-->
+            <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control" maxlength="64">
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="documento">Documento Pessoal</label>
+                        <input type="number" name="documento" id="documento" class="form-control">
+                    </div>
+                    <div class="col-sm">
+                        <label for="doc_especifico">Tipo de Documento</label>
+                        <textarea name="doc_especifico" id="doc_especifico" rows="1" class="form-control" placeholder="Descreva o documento inserido"></textarea>
+                    </div>
+                    <div class="col-1">
+                        <label for="idade">Idade</label>
+                        <input type="text" name="idade" id="idade" class="form-control" maxlength="3" size="">
+                    </div>
+                    <div class=" checkbox">
+                        &nbsp;
+                        &nbsp;
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="idade1" name="idade" class="custom-control-input">
+                            <label class="custom-control-label" for="idade1">anos</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="idade2" name="idade" class="custom-control-input">
+                            <label class="custom-control-label" for="idade2">meses</label>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        &nbsp;
+                        &nbsp;
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="sexo1" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="sexo1">Masculino</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="sexo2" name="sexo" class="custom-control-input">
+                            <label class="custom-control-label" for="sexo2">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" name="logradouro" id="logradouro" class="form-control">
+                    </div>
+                    <div class="col-sm">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemtento" id="complemento" class="form-control">
+                    </div>
+                    <div class="col-sm">
+                        <label for="municipio">Município</label>
+                        <input type="text" name="municipio" id="municipio" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" class="form-control" maxlength="14">
+                    </div>
+                </div>
+            </div>
+        </form>
+        &nbsp;
+        &nbsp;
+        <h4>Destino da Vitima</h4>
+        <form action="#">
+            <div class="form-group">
+                <div class="col-sm">
+                    <div class="checkbox">
+                        <!--formas de saber o destino da vitima-->
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino1" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino1">Permaneceu no local após ser atendido(a)</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino2" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino2">Encaminhada ao suporte avançado</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino3" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino3">Encaminhada ao suporte aeromédico</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino4" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino4">Entregue ao hospital</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino5" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino5">Recusou atendimento</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="destino6" name="destino" class="custom-control-input">
+                            <label class="custom-control-label" for="destino6">Transportada por terceiros</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        &nbsp;
+        &nbsp;
+        <h4>Dados do Comadante/Supervisor</h4>
+        <form action="#" method="POST"><!--Dados da guarnição-->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="cad_comando">Matricula do CMT da operação</label>
+                        <input type="number" name="cad_comando" id="cad_comando" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="graduacao">Posto/Graduação</label>
+                        <input type="text" name="graduacao" id="graduacao" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="nome_comando">Nome do comandante da operação</label>
+                        <input type="text" name="nome_comnado" id="nome_comando" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="cad_comando">Matricula do Supervisor</label>
+                        <input type="number" name="cad_comando" id="cad_comando" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="graduacao">Posto/Graduação</label>
+                        <input type="text" name="graduacao" id="graduacao" class="form-control">
+                    </div>
+                    <div class="col-sm">
+                        <label for="nome_comando">Nome do Supervisor</label>
+                        <input type="text" name="nome_comnado" id="nome_comando" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <h4>Forms Incêndio</h4>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form action="#" method="post">
+            
+            <div class=" col-4 -sm">
+                <select class="custom-select">
+                    <option selected>Selecione onde ocorreu</option>
+                    <option value="1">Edificação</option>
+                    <option value="2">Meio de Transporte</option>
+                    <option value="3">Vegetação</option>
+                    <option value="4">Outros...</option>
+                </select>
+            </div>
+            &nbsp;
+            <h5> <strong>Edificação</strong> </h5>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="local">Local presumido da origem do incendio</label>
+                    <input type="text" name="local_edificacao" id="local" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label for="predominante">Classe Predominante</label>
+                    <input type="text" name="predominante" id="predominante" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="pavimentoAtingido">Pavimento atingido</label>
+                    <input type="text" name="pavimento" id="pavimentoAtingido" class="form-control">
+                </div>
+                <div class="col-sm">
+                    <label for="areaAtingida">Área total atingida</label>
+                    <input type="text" name="areaAtingida" id="areaAtingida" class="form-control">
+                </div>
+                <div class="col-sm">
+                    <label for="areaTotal">Área total</label>
+                    <input type="text" name="areaTotal" id="areaTotal" class="form-control">
+                </div>
+            </div>
+            &nbsp;
+            <h6 >Tipo de revestimento estrutural</h6>
+            <div class="checkbox">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="opt1" name="destino" class="custom-control-input">
+                    <label class="custom-control-label" for="opt1">Alvenaria</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="opt2" name="destino" class="custom-control-input">
+                    <label class="custom-control-label" for="opt2">Concreto</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="opt3" name="destino" class="custom-control-input">
+                    <label class="custom-control-label" for="opt3">Metal</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="opt4" name="destino" class="custom-control-input">
+                    <label class="custom-control-label" for="opt4">Outra:</label>
+                    <input type="text" name="outros" id="opt4" class="form-control">
+                </div>
+            </div>
+            &nbsp;
+            <input type="submit" name="btnSalvar" value = "Salvar Ocorrência">
+            
+            
+        </form>
+       
+    </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
